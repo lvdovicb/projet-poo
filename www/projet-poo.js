@@ -3,51 +3,48 @@
 
 
 let peace = 100; 
-//représentée par une barre de chargement en chatons
+//représentée par une barre de chargement en tetes de chatons
 
-class Idiot {
+class Genius {
     constructor (name, ego){
       this.name = name;
-      this.ego = ego;
-      this.threat = [];
-      this.insult = ["My rocket is bigger than yours", "I would never call you 'short and fat'", ];
+      this.ego = 150;
     }
 
-    threat(idiot){
+    threat(Genius){
       let randomThreat = threat[Math.floor(Math.random()*threat.length)];
       alert(randomThreat);
       ego = ego - 20;
       peace = peace - 10;
     }
 
-    insult(idiot){
+    insult(Genius){
       let randomInsult = insult[Math.floor(Math.random()*insult.length)];
       alert(randomInsult);
       ego = ego - 30;
       peace = peace - 20;
-      console.log(Donald);
     }
 
-    hug(idiot){
+    hug(Genius){
       alert();
       ego = ego + 30;
       peace = peace + 30;
     }
 
-    kiss(idiot){
+    kiss(Genius){
       alert();
       ego = ego + 40
       peace = peace + 40;
     }
 
-    bomb(idiot){
+    bomb(Genius){
       if (peace === 0) {
       alert("Nuclear Apocalypse");
       }
     }
 };
 
-let donald = new Idiot ("Donald", 150);
-let kim = new Idiot ("Kim", 150);
-console.log(Idiot);
+let donald = new Genius ("Donald");
+let kim = new Genius ("Kim");
+console.log(Genius);
 
