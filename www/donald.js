@@ -1,19 +1,24 @@
 
 
-class Donald extends Genius{
-  constructor(name, threat, insult){
-    super(name, ego);
-    this.threat = [threats];
-  }
-  insult(player2){
-    randomInsult
-  }
-  threat(player2){
-    randomThreat;
-  }
+class Donald extends Genius {
+    constructor(name) {
+      super(name);
+      this.insults = ["I would NEVER call you ‘short and fat’!", "You're a cruel dictator !", "Rocket Man !", "You're a sick puppy"];
+      this.threats = ["I've got a bigger button, and it works !", "The weapons you are acquiring are not making you safer, they are putting your regime in grave danger", "Our capabilities are much bigger and more powerful", "Military solutions are now fully in place,locked and loaded, should North Korea act unwisely", "I will unleash fire, fury and frankly power, the likes of which this world has never seen before"];
+    }
+
+    insult(player2) {
+      super.insult(player2);
+      let randomInsult = this.insults[Math.floor(Math.random() * insults.length)];
+      alert(randomInsult);
+    }
+
+    threaten(player2) {
+      super.threaten(player2);      
+      let randomThreat = this.threats[Math.floor(Math.random() * threats.length)];
+      alert(randomThreat);
+    }
 }
 
-insults = ["I would NEVER call you ‘short and fat’!", "You're a cruel dictator !", "Rocket Man !", "You're a sick puppy"];
 
-threats = ["I've got a bigger button, and it works !", "The weapons you are acquiring are not making you safer, they are putting your regime in grave danger", "Our capabilities are much bigger and more powerful", "Military solutions are now fully in place,locked and loaded, should North Korea act unwisely", "I will unleash fire, fury and frankly power, the likes of which this world has never seen before"];
 

@@ -13,7 +13,6 @@ class Playground {
    
 }
 
-// peace += player1.insult(player2);
 
 // player1 = new Kim();
 // player2 = new Donald();
@@ -22,5 +21,5 @@ class Playground {
 //   };
 
 // button.addEventListener("click", function(){
-//     threat();
+//     threaten();
 // })
