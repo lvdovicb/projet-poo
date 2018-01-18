@@ -7,10 +7,10 @@ class Genius {
         this.ego = 150;
       }
 
-      insult(cible) {
+      insult(cible, playground) {
         this.ego += 10;
         cible.ego -= 30;
-        return peace -= 20;
+        playground.peace -= 20;
       }
 
       threaten(cible) {
@@ -34,14 +34,18 @@ class Genius {
       }
 
       bomb(cible) {
-        if (this.ego <= 0 || this.ego <= 0 || peace <= 0) {
-          alert("Nuclear Apocalypse");
+          alert("Nuclear Apocalypse. We're all dead");
           cible.ego = 0;
           this.ego = 0;
           return peace = 0;
         }
       }
-};
+    //   if (this.ego <= 0 || cible.ego <= 0 || peace <= 0) {
+    //     alert("Nuclear Apocalypse");
+    //     cible.ego = 0;
+    //     this.ego = 0;
+    //     // return peace = 0;
+    // }
 
 
 
