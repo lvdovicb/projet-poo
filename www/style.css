@@ -1,4 +1,27 @@
 
-body {
+back {
   width: 90%;
+  background-image:url("assets/dmz.jpg");
+  background-size: cover;
+}
+
+ #game {
+   
+  width: 100vw;
+  height: 300vh;
+  display: block;
+  /* z-index: 23; */
+  /* background-image:url("assets/background.jpg"); */
+  background-size: cover;
+  margin: 400px auto auto 500px;
+} 
+
+#game input {
+  z-index: 777;
+}
+
+
+#buttons {
+  display: inline-block;
+  margin: 600px auto auto 500px;
 }

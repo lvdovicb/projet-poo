@@ -34,7 +34,7 @@ class Genius {
       }
 
       bomb(cible) {
-          alert("Nuclear Apocalypse. We're all dead");
+        prompt("Are you sure ?!!!!")
           cible.ego = 0;
           this.ego = 0;
           return 0;
