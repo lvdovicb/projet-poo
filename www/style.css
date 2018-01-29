@@ -1,27 +1,67 @@
 
-back {
-  width: 90%;
-  background-image:url("assets/dmz.jpg");
-  background-size: cover;
-}
-
- #game {
-   
+#back {
   width: 100vw;
-  height: 300vh;
-  display: block;
-  /* z-index: 23; */
-  /* background-image:url("assets/background.jpg"); */
-  background-size: cover;
-  margin: 400px auto auto 500px;
-} 
-
-#game input {
-  z-index: 777;
+  height: 100vh;
+  background-image:url("./assets/dmz.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(250, 60, 92);
+  z-index: -1;
+  background-attachment: fixed;  
 }
 
+
+#trump {
+  z-index: 5;
+  position: relative;
+  top : -520px;
+  right: -400px;
+  margin: 0;
+}
+
+#kim {
+  /* transform:rotateY(90deg); */
+  z-index: 5;
+  position: relative;
+  top: -480px;
+  left: -400px;
+  margin: 0;
+}
 
 #buttons {
   display: inline-block;
-  margin: 600px auto auto 500px;
+  position: relative; 
+  margin: 90vh auto auto 38vw;
+  z-index: 789;
 }
+
+#launch { 
+  width: 500px;
+  height: 500px;
+  display: block;
+  z-index: 10000;
+  position: absolute;
+  
+  margin: 400px auto auto 500px;
+} 
+
+
+#cats {
+  object-fit: cover;
+  display: block;
+  width: 90vw;
+  height: 95vh;
+  z-index: 999;
+  position: absolute;
+  top: -375px;
+  left: -400px;
+}
+
+#launch #input {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 99999;
+  background-color: rgb(158, 78, 196);
+}
+

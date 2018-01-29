@@ -3,6 +3,27 @@
 
 let playg = new Playground();
 
+
+let kim = document.querySelector("#selectkim");
+kim.addEventListener("click", function(event) {
+  let launch = document.querySelector("#launch")
+  launch.style.display = 'none';  
+  // let player1 = new Kim("Kim");
+  // let player2 = new Donald("Donald");
+  playg.setPlayer1();
+  // playg.setPlayer2(targetPl);
+});
+
+let donald = document.querySelector("#selectdonald");
+donald.addEventListener("click", function(event) {
+  let launch = document.querySelector("#launch");
+  launch.style.display = 'none';  
+  // let player1 = new Donald("Donald");
+  // let player2 = new Kim("Kim");
+  // playg.setPlayer1(currentPl);
+  playg.setPlayer2();
+});
+
 let kiss1 = document.querySelector("#kiss1")
 kiss1.addEventListener("click", function (event) {
   playg.action("kiss");

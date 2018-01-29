@@ -3,9 +3,9 @@
 
 
 class Playground {
-    constructor (player1 = new Kim("Kim")) {
-        this.player1 = new Kim("Kim");
-        this.player2 = new Donald("Donald");
+    constructor (player1, player2) {
+        this.player1 = player1;
+        this.player2 = player2;
         this.currentPl = this.player1;
         this.targetPl = this.player2;
         this.peace = 100;
@@ -34,4 +34,18 @@ class Playground {
         this.turn()
     }
 
+    setPlayer1(){
+        this.player1 = new Kim("Kim");
+        this.player2 = new Donald("Donald");
+        this.currentPl = this.player1;
+        this.targetPl = this.player2;
+    }
+
+    setPlayer2(){
+        this.player1 = new Donald("Donald");
+        this.player2 = new Kim("Kim");
+        this.currentPl = this.player1;
+        this.targetPl = this.player2;
+        
+    }
 }
