@@ -20,15 +20,15 @@
 
   <!-- <section>
       <div id="heads"> -->
-        <img id="trump" class="roll-in-left" src="assets/tr-head.png" alt="donald">
-        <img id="kim" class="roll-in-right" src="assets/kim_jong_un_PNG28.png" alt="kim">
+        <img id="trump" class="roll-in-left bounce-in-top" src="assets/tr-head.png" alt="donald">
+        <img id="kim" class="roll-in-right bounce-in-top" src="assets/kim_jong_un_PNG28.png" alt="kim">
       <!-- </div>
   </section>   -->
 
 
   <section id="back" class="color-change-3x">
     <div  id="buttons">
-      <button id="kiss1" class="btn btn-secondary"> Kiss </button>
+      <button id="kiss1" class="btn btn-secondary bs-example-modal-lg" data-toggle="modal" data-target=".bs-example-modal-lg"> Kiss </button>
       <button id="hug1" class="btn btn-secondary"> Hug </button>
       <button id="insult1" class="btn btn-info"> Insult </button>
       <button id="threaten1" class="btn btn-info"> Threaten </button>
@@ -36,7 +36,14 @@
     </div>
   </section>
 
- 
+  <div class="modal fade bs-example-modal-lg" tabindex="1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+       <strong class="titrAlert"> Welcome to this game ! </strong>
+        <p>Welcome to this game !</p>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -45,6 +52,7 @@
   <script type="text/javascript" src="donald.js"></script>
   <script type="text/javascript" src="playground.js"></script>  
   <script type="text/javascript" src="controller.js"></script>
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
   
   
   <!-- <script src="app.js"></script> -->
