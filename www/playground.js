@@ -13,10 +13,8 @@ class Playground {
 
     turn() {
         if (this.player1.ego <= 0 || this.player2.ego <= 0 || this.peace <= 0) {
-            this.player1.bomb(this.player2) //je peux enlever la cible ?
-            alert("Earth over. We're all dead");
-            // this.player1.ego = 0;
-            // this.player2.ego = 0;
+            this.player1.bomb(this.player2)
+            alert("Earth over. We're all dead. It's very sad");
             return this.peace = 0;
         
         } else { 
