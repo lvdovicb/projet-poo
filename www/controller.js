@@ -50,10 +50,3 @@ bomb1.addEventListener("click", function(event){
 });
 
 
-
-function prog(){
-  let prog = document.querySelector('#prog');
-  let peace = playg.peace;
-  prog.value = peace;
-  return prog.innerHTML = prog.value;
-} 

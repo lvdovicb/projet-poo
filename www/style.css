@@ -29,14 +29,62 @@
   z-index: 45;
 }
 
-progress {
-  height: 20px;
-  padding: 20px 20px 0 20px;
-  background-color: rgb(21, 255, 0);
-  -webkit-transition : width 5s ease;
-   -moz-transition : width 5s ease;
-     -o-transition : width 5s ease;
-        transition : width 5s ease;
+#prog {
+  height: 30px;
+  /* padding: 20px 20px 0 20px; */
+background-color: rgb(97, 219, 15); 
+  -webkit-transition : width 2s ease;
+   -moz-transition : width 2s ease;
+     -o-transition : width 2s ease;
+        transition : width 2s ease; 
+}
+
+#donald_ego {
+    
+    display: flex;
+    align-items: center;
+    border: 8px dotted rgb(7, 33, 148);
+    background-color: rgb(255, 255, 255); 
+    font-weight: 700;
+    height: 60px;
+    position: absolute;
+    top: 400px;
+    right: 200px;
+    z-index: 46; 
+    padding: 0px 0px 0px 5px;
+    height: 60px;
+    font-size: 18px;
+}
+
+/* barre de progression ego de Donald */
+#don_ego {
+    /* -moz-orient: vertical; */
+    background-color: red;
+    padding: 5px;
+    margin: 6px;
+}
+
+#kim_ego {
+    display: flex;
+    align-items: center;
+    border: 8px dotted rgb(96, 207, 22);
+    background-color: rgb(253, 137, 205);
+    font-weight: 700;
+    font-size: 18px;
+    height: 60px;
+    top: 500px;
+    left: 300px;
+    position: absolute;
+    z-index: 46; 
+    padding: 0px 5px 5px 5px;     
+}
+
+/* barre de progression ego de Kim */
+#k_ego {
+    /* -moz-orient: vertical; */
+    background-color: red;
+    height: 30px;
+    margin: 6px;
 }
 
 /* ----------------------------------------------
@@ -163,7 +211,7 @@ progress {
   z-index: 500;
   position: absolute;
   height: 200px;
-  top : 160px;
+  top : 130px;
   right: 250px;
   margin: 0;
 }
